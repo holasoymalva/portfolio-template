@@ -2,8 +2,6 @@
 
 Un template moderno y minimalista para crear tu portfolio profesional como desarrollador. Basado en React, TypeScript y Tailwind CSS.
 
-![Portfolio Preview](./preview.png)
-
 ## 🚀 Características
 
 - ⚡ Desarrollado con React 18 y TypeScript
