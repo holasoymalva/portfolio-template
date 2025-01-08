@@ -130,7 +130,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 Si tienes preguntas o necesitas ayuda:
 
 - Abre un issue en GitHub
-- Envía un email a [tu-email@ejemplo.com]
 
 ## 🙌 Agradecimientos
 
