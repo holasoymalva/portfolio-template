@@ -1,12 +1,12 @@
 export const portfolioData = {
   header: {
-    name: "Malva",
+    name: "YourName",
     title: "Front-end development",
     subtitle: "React & TypeScript",
     role: "Web Developer",
   },
   intro: {
-    title: "Hi there, my name is Malva!",
+    title: "Hi there, my name is YourName!",
     description:
       "Join me on my journey from junior to Software Development, as I tackle exciting projects along the way.",
   },
@@ -19,7 +19,7 @@ export const portfolioData = {
       link: "#",
     },
     {
-      title: "Malva.dev",
+      title: "YourName.dev",
       description: "Personal portfolio",
       image: "https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["CSS", "HTML", "React.js"],
@@ -47,7 +47,7 @@ export const portfolioData = {
     skills: ["Web Development", "Web Design", "Branding & Vision"],
   },
   contact: {
-    email: "malva@malva.dev",
+    email: "yourMail@yourMail.dev",
     phone: "+44555555555",
   },
   social: {
