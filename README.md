@@ -2,7 +2,7 @@
 
 Un template moderno y minimalista para crear tu portfolio profesional como desarrollador. Basado en React, TypeScript y Tailwind CSS.
 
-<img width="1470" alt="image" src="https://github.com/user-attachments/assets/79fa2db7-af9b-4c5c-9b8f-aefcb0c6f56f" />
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/bd0e2246-9875-4f9c-8383-524aa3d9aa4c" />
 
 ## 🚀 Características
 
