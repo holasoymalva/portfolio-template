@@ -95,7 +95,104 @@ El proyecto utiliza Tailwind CSS. Puedes modificar los estilos:
 
 ## 📦 Despliegue
 
-Para construir el proyecto para producción:
+### Despliegue en GitHub Pages
+
+1. Primero, instala gh-pages como dependencia de desarrollo:
+```bash
+npm install gh-pages --save-dev
+```
+
+2. Actualiza tu archivo `vite.config.ts`:
+```typescript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: '/nombre-repositorio/' // Reemplaza con el nombre de tu repositorio
+})
+```
+
+3. Agrega los siguientes scripts en tu `package.json`:
+```json
+{
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  }
+}
+```
+
+4. Configura tu repositorio en GitHub:
+   - Crea un nuevo repositorio en GitHub
+   - Inicializa Git en tu proyecto si aún no lo has hecho:
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     ```
+   - Conecta tu repositorio local con GitHub:
+     ```bash
+     git remote add origin https://github.com/username/nombre-repositorio.git
+     git branch -M main
+     git push -u origin main
+     ```
+
+5. Despliega tu sitio:
+```bash
+npm run deploy
+```
+
+6. Configura GitHub Pages:
+   - Ve a la configuración de tu repositorio en GitHub
+   - En la sección "Pages"
+   - Selecciona la rama `gh-pages` como fuente
+   - Guarda los cambios
+
+Tu sitio estará disponible en: `https://username.github.io/nombre-repositorio`
+
+### Resolución de Problemas Comunes en GitHub Pages
+
+1. **Las imágenes no cargan**
+   - Asegúrate de que las rutas de las imágenes sean relativas al repositorio
+   - Usa la variable `base` en las rutas:
+   ```jsx
+   <img src={`${import.meta.env.BASE_URL}images/project1.jpg`} />
+   ```
+
+2. **404 en rutas personalizadas**
+   - Crea un archivo `public/404.html`
+   - Configura el redirector en el index.html
+
+3. **Los estilos no se aplican**
+   - Verifica que el `base` en `vite.config.ts` sea correcto
+   - Asegúrate de que los assets estén siendo importados correctamente
+
+4. **Problemas con las rutas**
+   - Usa `createBrowserRouter` con la propiedad `basename`:
+   ```typescript
+   createBrowserRouter([...], {
+     basename: import.meta.env.BASE_URL
+   })
+   ```
+
+### Otras Plataformas de Despliegue
+
+También puedes desplegar en otras plataformas:
+
+#### Vercel
+1. Crea una cuenta en Vercel
+2. Conecta tu repositorio de GitHub
+3. Vercel detectará automáticamente que es un proyecto de Vite
+
+#### Netlify
+1. Crea una cuenta en Netlify
+2. Arrastra y suelta la carpeta `dist` después de ejecutar `npm run build`
+   O
+3. Conecta tu repositorio de GitHub para despliegue continuo
+
+Para construir el proyecto para producción en cualquier plataforma:
 
 ```bash
 npm run build
@@ -104,12 +201,6 @@ yarn build
 ```
 
 Esto generará una carpeta `dist` con los archivos optimizados para producción.
-
-### Plataformas de Despliegue Recomendadas
-
-- Vercel
-- Netlify
-- GitHub Pages
 
 ## 🤝 Contribuir
 
