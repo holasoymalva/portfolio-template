@@ -12,43 +12,108 @@ export const portfolioData = {
   },
   projects: [
     {
-      title: "Budgy",
-      description: "Finances learning platform",
-      image: "https://images.unsplash.com/photo-1457364983758-510f8afa9f5f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["CSS", "HTML", "React.js"],
-      link: "#",
+      title: "E-Commerce Dashboard",
+      description: "A modern dashboard for managing online stores with real-time analytics and inventory management",
+      image: "https://placehold.co/600x400", // You'll need to add these images to your public folder
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Redux"],
+      link: "https://github.com/example/project1"
     },
     {
-      title: "YourName.dev",
-      description: "Personal portfolio",
-      image: "https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["CSS", "HTML", "React.js"],
-      link: "#",
+      title: "Social Media Platform",
+      description: "A full-featured social platform with real-time messaging and content sharing",
+      image: "https://placehold.co/600x400",
+      technologies: ["Next.js", "GraphQL", "Node.js", "MongoDB"],
+      link: "https://github.com/example/project2"
     },
+    {
+      title: "Weather Application",
+      description: "A beautiful weather app with detailed forecasts and interactive maps",
+      image: "https://placehold.co/600x400",
+      technologies: ["React", "TypeScript", "OpenWeather API", "Mapbox"],
+      link: "https://github.com/example/project3"
+    },
+    {
+      title: "Task Management Tool",
+      description: "A collaborative task management application with real-time updates",
+      image: "https://placehold.co/600x400",
+      technologies: ["Vue.js", "Firebase", "Tailwind CSS", "Jest"],
+      link: "https://github.com/example/project4"
+    }
   ],
   services: [
     {
       id: "01",
       number: "01",
-      title: "WEB DEVELOPMENT",
-      description:
-        "Modern web development with focus on performance and polish. I specialize in building applications with component-based architecture using React.js and TypeScript, ensuring that every web platform is both powerful and future-proof.",
+      title: "FRONTEND DEVELOPMENT",
+      description: "Crafting responsive and performant web applications using modern technologies and best practices. Specialized in React and TypeScript development with a focus on user experience and accessibility.",
       details: [
-        "Modern JS Frameworks",
-        "Responsive Web Development",
+        "Modern JavaScript & TypeScript",
+        "React & Next.js Development",
         "Performance Optimization",
-        "Version Control & Deployment",
-        "UI/UX Implementation",
-      ],
+        "Responsive Design",
+        "State Management (Redux, Context API)"
+      ]
     },
+    {
+      id: "02",
+      number: "02",
+      title: "UI/UX DESIGN",
+      description: "Creating intuitive and engaging user interfaces that provide exceptional user experiences. Focus on modern design principles and accessibility.",
+      details: [
+        "User Interface Design",
+        "Responsive Layouts",
+        "Interactive Prototypes",
+        "Design Systems",
+        "Accessibility (WCAG)"
+      ]
+    }
   ],
   about: {
-    description: `From nearly a decade immersed in programming and design, I recently embraced the exhilarating new challenge: Software Engineering. What began with modest and small projects has evolved into a progressive pursuit of coding excellence, allowing me to create better, more efficient, and more sophisticated work while developing new tools to challenge myself.`,
-    skills: ["Web Development", "Web Design", "Branding & Vision"],
+    description: `With over 8 years of experience in web development, I've had the pleasure of working with companies ranging from startups to Fortune 500s. My journey began with simple HTML and CSS, but my passion for creating exceptional user experiences led me to master modern frameworks and tools.
+    I specialize in building scalable frontend applications and have a deep understanding of modern JavaScript, React, and TypeScript. When I'm not coding, I contribute to open-source projects and mentor aspiring developers.`,
+  
+    skills: [
+      "Frontend Development",
+      "UI/UX Design",
+      "React & TypeScript",
+      "Performance Optimization",
+      "Technical Leadership",
+      "Mobile-First Development"
+    ],
+
+    experience: [
+      {
+        company: "Tech Innovators Inc.",
+        role: "Senior Frontend Developer",
+        period: "2020 - Present",
+        description: "Leading the frontend development team and architecting scalable solutions."
+      },
+      {
+        company: "Digital Solutions Ltd.",
+        role: "Frontend Developer",
+        period: "2018 - 2020",
+        description: "Developed and maintained multiple client projects using React and TypeScript."
+      }
+    ],
+
+    education: [
+      {
+        degree: "Master's in Computer Science",
+        school: "Tech University",
+        year: "2018"
+      },
+      {
+        degree: "Bachelor's in Software Engineering",
+        school: "Engineering College",
+        year: "2016"
+      }
+    ]
   },
   contact: {
     email: "yourMail@yourMail.dev",
     phone: "+44555555555",
+    location: "San Francisco, CA",
+    availability: "Open to new opportunities"
   },
   social: {
     github: "#",
