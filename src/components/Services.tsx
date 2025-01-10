@@ -4,7 +4,7 @@ const Services: React.FC = () => {
   const { services } = portfolioData;
 
   return (
-    <section className="py-20 px-6">
+    <section id='services' className="py-20 px-6">
       <h2 className="text-2xl font-bold mb-10">My Services</h2>
       {services.map((service) => (
         <div key={service.id} className="mb-20">

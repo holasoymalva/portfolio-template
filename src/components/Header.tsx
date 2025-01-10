@@ -16,6 +16,7 @@ const Header: React.FC = () => {
       <nav className="hidden md:flex space-x-6">
         <a href="#home" className="text-gray-500 hover:text-gray-300">home</a>
         <a href="#work" className="text-gray-500 hover:text-gray-300">work</a>
+        <a href="#services" className="text-gray-500 hover:text-gray-300">services</a>
         <a href="#about" className="text-gray-500 hover:text-gray-300">about</a>
         <a href="#contact" className="text-gray-500 hover:text-gray-300">contact</a>
       </nav>
